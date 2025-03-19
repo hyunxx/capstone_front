@@ -1,38 +1,166 @@
-.App {
-  text-align: center;
+body {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 40px 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+    color: #000;
+    text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body #header h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body #list .container table {
+    width: 100%;
+    margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+body #list .container table td {
+    border: 1px solid #000;
+    padding: 10px 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body #list .container table td a:hover {
+    font-weight: 700;
+}
+
+body #list .button-box {
+    margin: 40px auto 20px;
+    text-align: center;
+}
+
+body #list .button-box a {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+body #view button {
+    background: unset;
+    border: none;
+}
+
+body #view .container {
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 20px 40px;
+}
+
+body #view .container-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+body #view button {
+    padding: 4px 8px;
+    border: 1px solid #000;
+}
+
+body #view button span {
+    /* font-size: 0; */
+}
+
+body #view .contents .content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+body #view .contents .content-header span {
+    color: #666;
+    font-size: 14px;
+}
+
+body #view .contents .content {
+    display: flex;
+    padding: 10px 0;
+}
+
+body #view .contents .content .profile {
+    min-width: 20%;
+    margin-right: 10px;
+}
+
+body #view .contents .content .text-box {
+    line-height: 1.6rem;
+}
+
+body #write .container {
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 20px 40px;
+}
+
+body #write .container-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+body #write button {
+    background: unset;
+    border: none;
+}
+
+body #write button {
+    padding: 4px 8px;
+    border: 1px solid #000;
+}
+
+body #write button span {
+    /* font-size: 0; */
+}
+
+body #write .contents .content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+body #write .contents .content-header span {
+    color: #666;
+    font-size: 14px;
+}
+
+body #write .contents .content {
+    display: flex;
+    padding: 10px 0;
+    width: 100%;
+}
+
+body #write .contents .content .text-box,
+body #write .contents .content .text-box textarea {
+    width: 100%;
+    min-width: 100%;
+    min-height: 100px;
+}
+
+body #write .contents .content .text-box textarea::placeholder {
+    font-size: 12px;
+    color: #666;
+}
+
+body #write .contents label {
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+}
+
+body #write .contents label input {
+    min-height: 30px;
+    display: block;
+    margin: 0 10px;
+}
+
+body #write .contents .content-header div {
+    display: flex;
 }
