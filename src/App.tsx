@@ -4,6 +4,7 @@ import List from './list';
 import { Route, Routes } from 'react-router-dom';
 import View from './view';
 import Write from './write';
+import PhaserGame from "./components/PhaserGame";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<List />} />
         <Route path="/view" element={<View />} />
         <Route path="/write" element={<Write />} />
+        <Route path="/PhaserGame" element={<PhaserGame />} />
       </Routes>
     </div>
   );
